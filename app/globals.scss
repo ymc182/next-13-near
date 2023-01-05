@@ -1,46 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 :root {
 	--max-width: 1100px;
-	--border-radius: 12px;
-	--font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-		"Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-		"Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+	--border-radius: 5px;
+	--font-mono: "Open Sans", sans-serif;
+	--bg-color: #242424;
+	--primary: #eee;
+	--secondary: rgb(58, 178, 162);
+	/* 
+	--wallet-selector-backdrop-bg
+--wallet-selector-heading-color
+--wallet-selector-text-color
+--wallet-selector-sidebar-border-color
+--wallet-selector-selected-wallet-bg
+--wallet-selector-selected-wallet-bg-hover
+--wallet-selector-wallet-option-border-color
+--wallet-selector-wallet-option-bg-hover
+--wallet-selector-content-bg
+--wallet-selector-change-path-bg
+--wallet-selector-home-button-bg
+--wallet-selector-confirm-button-bg
+--confirm-button-bg-hover
+--wallet-selector-error
+--wallet-selector-close-button-bg-color
+--wallet-selector-close-button-fill-icon-colo
+--wallet-selector-spinner-color
+--wallet-selector-bottom-section
+--wallet-selector-mobile-text
+--wallet-selector-connected-green 
+*/
 }
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-
-		--primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-		--secondary-glow: linear-gradient(
-			to bottom right,
-			rgba(1, 65, 255, 0),
-			rgba(1, 65, 255, 0),
-			rgba(1, 65, 255, 0.3)
-		);
-
-		--tile-start-rgb: 2, 13, 46;
-		--tile-end-rgb: 2, 5, 19;
-		--tile-border: conic-gradient(
-			#ffffff80,
-			#ffffff40,
-			#ffffff30,
-			#ffffff20,
-			#ffffff10,
-			#ffffff10,
-			#ffffff80
-		);
-
-		--callout-rgb: 20, 20, 20;
-		--callout-border-rgb: 108, 108, 108;
-		--card-rgb: 100, 100, 100;
-		--card-border-rgb: 200, 200, 200;
-	}
-}
-
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+html,
+body {
+	font-family: var(--font-mono);
+	background: var(--bg-color);
+	color: var(--primary);
+}
+
+button {
+	background: var(--secondary);
+	color: var(--primary);
+	border: none;
+	border-radius: 5px;
+	padding: 0.2rem 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+	background: var(--primary);
+	color: var(--secondary);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+	}
 }
