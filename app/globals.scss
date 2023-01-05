@@ -6,6 +6,11 @@
 	--bg-color: #242424;
 	--primary: #eee;
 	--secondary: rgb(58, 178, 162);
+	--wallet-selector-content-bg: rgba(255, 255, 255, 0.3);
+	--wallet-selector-wallet-option-bg-hover: var(--secondary);
+	--wallet-selector-wallet-option-bg-hover: var(--secondary);
+	--wallet-selector-selected-wallet-bg: var(--secondary);
+	--wallet-selector-selected-wallet-bg-hover: var(--secondary);
 	/* 
 	--wallet-selector-backdrop-bg
 --wallet-selector-heading-color
@@ -15,7 +20,7 @@
 --wallet-selector-selected-wallet-bg-hover
 --wallet-selector-wallet-option-border-color
 --wallet-selector-wallet-option-bg-hover
---wallet-selector-content-bg
+
 --wallet-selector-change-path-bg
 --wallet-selector-home-button-bg
 --wallet-selector-confirm-button-bg

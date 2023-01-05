@@ -11,6 +11,7 @@ specifiers:
   encoding: ^0.1.13
   near-api-js: ^1.1.0
   next: 13.1.1
+  prisma: ^4.8.0
   react: 18.2.0
   react-dom: 18.2.0
   react-toastify: ^9.1.1
@@ -29,6 +30,7 @@ dependencies:
   encoding: 0.1.13
   near-api-js: 1.1.0_encoding@0.1.13
   next: 13.1.1_3duxcpitbtplz62feflag7fwby
+  prisma: 4.8.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-toastify: 9.1.1_biqbaboplfbrettd7655fr4n2y
@@ -261,6 +263,11 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@prisma/engines/4.8.0:
+    resolution: {integrity: sha512-A1Asn2rxZMlLAj1HTyfaCv0VQrLUv034jVay05QlqZg1qiHPeA3/pGTfNMijbsMYCsGVxfWEJuaZZuNxXGMCrA==}
+    requiresBuild: true
+    dev: false
 
   /@swc/helpers/0.4.14:
     resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
@@ -728,6 +735,15 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: false
+
+  /prisma/4.8.0:
+    resolution: {integrity: sha512-DWIhxvxt8f4h6MDd35mz7BJff+fu7HItW3WPDIEpCR3RzcOWyiHBbLQW5/DOgmf+pRLTjwXQob7kuTZVYUAw5w==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 4.8.0
     dev: false
 
   /qrcode/1.5.1:
